@@ -1,0 +1,30 @@
+<%- include("Partials/header1"); -%>
+<%- include("Partials/header2"); -%>
+
+<div class="popup">
+  <div class="form">
+    <form class="" action="/addBook" method="post">
+      <h2>Donate Book</h2>
+      <h5 style="color:<%=color%>; visibility:<%=visi%>"><%=content%></h5>
+
+      <div class="form-element">
+        <label for="title">Title</label>
+        <input type="text" id="title" name="title" placeholder="Enter Book Title">
+      </div>
+
+      <div class="form-element">
+        <label for="Author">Author</label>
+        <input type="text" id="author" name="author" placeholder="Enter Author">
+      </div>
+
+      <div class="form-element">
+        <button type="donate" name="donate">Donate</button>
+      </div>
+
+    </form>
+  </div>
+</div>
+
+
+  </body>
+</html>

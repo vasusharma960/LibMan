@@ -1,0 +1,32 @@
+<%- include("Partials/header1"); -%>
+
+<div class="popup">
+
+  <div class="form">
+    <form class="" action="/signin" method="post">
+      <h2>Login</h2>
+      <h5 style="color:red; visibility:<%=vis%>"><%=content%></h5>
+
+      <div class="form-element">
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" placeholder="Enter Email">
+      </div>
+
+      <div class="form-element">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter Password">
+      </div>
+
+      <div class="form-element">
+        <button type="submit" name="button">Sign in</button>
+      </div>
+
+      <div class="form-element">
+        <a href="register">Register</a>
+      </div>
+    </form>
+  </div>
+</div>
+
+</body>
+</html>
