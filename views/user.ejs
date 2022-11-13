@@ -1,7 +1,21 @@
 <%- include("Partials/header1"); -%>
 <%- include("Partials/header2"); -%>
 
+<div class="all-books">
 
+<% if(books.length === 0){ %>
+  <h1>No Book is Available</h1>
+<% }else{ %>
+  <h1>Available Books</h1>
+  <% books.forEach(function(book){ %>
+    <div class="books">
+      <h2>Title: <%= book.title %> </h2>
+      <p>Author: <%= book.author %> </p>
+    </div>
+  <% }); %>
+<% } %>
+
+</div>
 
   </body>
 </html>
